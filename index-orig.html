@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Woody Willis | Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>WOODY WILLIS</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <br>
+    <section class="hero" id="about">
+      <img
+        src="assets/images/tech.png"
+        alt="woody-willis"
+        loading="lazy"
+        class="hero-img"
+        style="height: 382px; width: 530px;"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          I am a 13 year old programmer with skills in developing Minecraft Server Plugins, Discord Bots and Website! 
+        </p>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-java.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-php.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/ndaeasy.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">NDA Easy</h3>
+          <p class="project-details">
+            This project taught me the basis of Blockchain technology. This was about
+            storing Non-Disclosure Agreements on a Blockchain and being able to verify
+            the validity of an NDA.
+          </p>
+          <a href="https://www.ndaeasy.co.uk" style="pointer-events: none;" target="_blank" class="project-link"><del>Check it Out</del></a> <span style="color:rgb(99, 99, 99);">[Taken Down]</span>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/bridgePractice.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Bridge Practice</h3>
+          <p class="project-details">
+            This project is a Minecraft server on which I am and admin.
+            I am working with the owner and a fellow admin to build this
+            server. It has over 75 thousand unique players!
+          </p>
+          <a href="https://bridgepractice.net" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/hypixelTools.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Hypixel Tools</h3>
+          <p class="project-details">
+            This project is extending my knowledge of the Hypixel and
+            DiscordJS. Using NodeJS, this Discord bot can denick,
+            find nicks and get stats of any player you choose!
+          </p>
+          <a href="https://github.com/woodywillis/hypixel-tools" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xvolwwoq" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy" id="copyright"></p>
+    </footer>
+    <script>
+      document.getElementById('copyright').innerHTML = '&copy; Copyright Woody Willis ' + new Date().getFullYear()</script>
+    </script>
+
+    <!-- Toggle dark mode -->
+    <i class="dark-light-mode" 
+      ><img
+        id="dark-light-mode"
+        src="assets/icons/icons8-moon-symbol-60.png"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function toggleDarkMode() {
+        const body = document.body
+        body.classList.toggle('dark-mode')
+
+        const sections = document.getElementsByTagName('section');
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].classList.toggle('dark-mode')
+        }
+
+        const footers = document.getElementsByTagName('footer');
+        for (var i = 0; i < footers.length; i++) {
+          footers[i].classList.toggle('dark-mode')
+        }
+
+        const headers = document.getElementsByTagName('nav');
+        for (var i = 0; i < headers.length; i++) {
+          headers[i].classList.toggle('dark-mode')
+        }
+        
+        const projects = document.getElementsByClassName('projects-container');
+        for (var i = 0; i < projects.length; i++) {
+            projects[i].style.color = 'black'
+        }
+
+        if (document.getElementById('dark-light-mode').getAttribute('src') == 'assets/icons/icons8-moon-symbol-60.png') {
+          document.getElementById('dark-light-mode').setAttribute('src', 'assets/icons/icons8-sun.svg') 
+          document.getElementById('dark-light-mode').setAttribute('style', 'filter: invert(1);') 
+        } else {
+          document.getElementById('dark-light-mode').setAttribute('src', 'assets/icons/icons8-moon-symbol-60.png') 
+          document.getElementById('dark-light-mode').setAttribute('style', 'filter: invert(0);') 
+        }
+      }
+
+      const darkMode = document.querySelector("#dark-light-mode");
+
+      darkMode.addEventListener("click", () => {
+        toggleDarkMode()
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Woody Willis</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Woody Willis</h1>
+      <ul class="navigation">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="bio">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          I am a 13 year old programmer with skills in developing Minecraft Server Plugins, Discord Bots and Websites! 
+        </p>
+        <br>
+        <a href="#projects" class="view-projects">View Projects</a>
+      </div>
+      <img
+        src="assets/images/earth.png"
+        alt="woody-willis"
+        loading="lazy"
+        class="hero-img"
+      />
+      <br>
+    </section>
+    <br><br>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-java.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/php-brands.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/ndaeasy.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">NDA Easy</h3>
+          <p class="project-details">
+            This project taught me the basis of Blockchain technology. This was about
+            storing Non-Disclosure Agreements on a Blockchain and being able to verify
+            the validity of an NDA.
+          </p>
+          <a href="https://www.ndaeasy.co.uk" style="pointer-events: none;" target="_blank" class="project-link"><del>Check it Out</del></a> <span style="color:rgb(99, 99, 99);">[Taken Down]</span>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/bridgePractice.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Bridge Practice</h3>
+          <p class="project-details">
+            This project is a Minecraft server on which I am an admin.
+            I am working with the owner and a fellow developer to build this
+            server. It has over 100 thousand unique players!
+          </p>
+          <a href="https://bridgepractice.net" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/hypixelTools.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Hypixel Tools</h3>
+          <p class="project-details">
+            This project is extending my knowledge of the Hypixel and
+            DiscordJS. Using NodeJS, this Discord bot can denick,
+            find nicks and get stats of any player you choose!
+          </p>
+          <a href="https://github.com/woodywillis/hypixel-tools" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <br>
+      </div>
+      <div class="projects-btn">
+        <a href="/projects.html" class="view-projects">View All</a>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy" id="copyright"></p>
+    </footer>
+    <script>
+      document.getElementById('copyright').innerHTML = '&copy; Copyright Woody Willis ' + new Date().getFullYear()</script>
+    </script>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
