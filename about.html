@@ -50,7 +50,14 @@
       <h2 class="skill-header">About Me</h2>
 
       <div class="skills-wrapper">
-        <p>TEST</p>
+        <p style="font-size: 24px;">
+          Hi! I'm Woody and thanks for checking out my page! I am 13 years old and an avid programmer! I love
+          making Discord bots and websites while also working on <a href="https://bridgepractice.net">BridgePractice</a>
+          in my freetime! I currently live in the South of England and am fluent in German as well as English.
+          I have a strong passion for increasing QoL on the internet as much as possible! Do not hesitate to contact me
+          if you want to chat or enquire about working with me!
+        </p>
+        <div id="x86-assembly"></div>
       </div>
     </section>
     <span id="spacer"></span>
@@ -62,9 +69,14 @@
     <script>
       document.getElementById('copyright').innerHTML = '&copy; Copyright Woody Willis ' + new Date().getFullYear()
       let spacer = document.getElementById('spacer');
-      for (var i = 0; i < 38; i++) {
+      for (var i = 0; i < 31; i++) {
         spacer.innerHTML += '<br>';
       }
+      setTimeout(() => {
+        document.getElementById("x86-assembly").innerHTML = `
+        <br>
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><img src="assets/images/rick-roll.gif"/></a>`;
+      }, 10000);
     </script>
 
     <!-- Website scripts -->
