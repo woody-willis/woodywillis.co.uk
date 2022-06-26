@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+    // Don't force http when serving the website locally
+    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -80,6 +86,6 @@
     ></script>
 
     <!-- Buy me a coffee! -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woodywillis" data-description="Support me on Buy me a coffee!" data-message="Hello! Buy me a nice warm cuppa to support me!" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woodywillis" data-description="Support me on Buy me a coffee!" data-message="Hello! Thanks for checking out my site!" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
   </body>
 </html>
