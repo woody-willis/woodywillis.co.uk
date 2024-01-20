@@ -1,0 +1,115 @@
+.content {
+    width: 100%;
+    padding: 50px 0;
+
+    margin-top: 6vh;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content h2.side_title {
+    margin-bottom: 5px;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.content .main {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content table tr {
+    width: 100%;
+    height: auto;
+}
+
+.content .main tr td {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.content .side {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content .side tr td {
+    width: calc(100% / 3);
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.content h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.content .main img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.content .side img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.content p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.content a {
+    color: var(--color-light);
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+.content a:hover {
+    color: var(--color-light-dark);
+}
+
+.content .button {
+    color: var(--color-light);
+    font-weight: 400;
+    border: 2px solid var(--color-light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.content .button:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.content .button.disabled {
+    background-color: #333333;
+    border: 2px solid #333333;
+    color: #6b6b6b;
+    cursor: not-allowed;
+}

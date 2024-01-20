@@ -1,95 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker:ital,wght@0,400;0,900;1,700&display=swap");
-
-.shade {
-    overflow: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.blackboard {
-    position: relative;
-    width: 640px;
-    margin: 7% auto;
-    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
-    border-radius: 20px;
-}
-
-.blackboard:before {
+html, body {
     box-sizing: border-box;
-    display: block;
-    position: absolute;
+}
+
+.content {
     width: 100%;
-    height: 100%;
-    content: "Contact Me";
-    font-size: 2.2em;
-    color: rgba(238, 238, 238, 0.7);
-    text-align: center;
-    padding-top: 20px;
-}
+    height: 100vh;
+    padding: 50px 0;
 
-.form {
-    padding: 70px 20px 20px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-p {
+    border-radius: 10px;
+    z-index: 300;
     position: relative;
-    margin-bottom: 1em;
 }
 
-label {
-    vertical-align: middle;
-    /* font-family: 'Permanent Marker', cursive; */
-    font-size: 1.6em;
-    color: rgba(238, 238, 238, 0.7);
+.contact_form {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-p:nth-of-type(5) > label {
-    vertical-align: top;
-}
-
-input,
-textarea {
-    vertical-align: middle;
-    padding-left: 10px;
-    background: none;
+.contact_form input[type=text], .contact_form input[type=email], .contact_form textarea {
+    width: 90%;
+    padding: 12px;
     border: none;
-    /* font-family: 'Permanent Marker', cursive; */
-    font-size: 1.6em;
-    color: rgba(238, 238, 238, 0.8);
-    line-height: .6em;
-    outline: none;
+    border-bottom: 3px solid white;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #232323;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    transition: border-bottom 0.3s ease-in-out;
 }
 
-textarea {
-    height: 120px;
-    font-size: 1.4em;
-    line-height: 1em;
-    resize: none;
+.contact_form textarea::placeholder {
+    font-family: 'Poppins';
+    transition: border-bottom 0.3s ease-in-out;
 }
 
-input[type="submit"] {
+.contact_form input.invalid, .contact_form textarea.invalid {
+    border-bottom: 3px solid red;
+}
+
+.contact_form button {
+    background-color: #232323;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid white;
+    border-radius: 4px;
     cursor: pointer;
-    color: rgba(238, 238, 238, 0.7);
-    line-height: 1em;
-    padding: 0;
+    transition: 0.3s ease-in-out;
+    width: 90%;
 }
 
-input[type="submit"]:focus {
-    background: rgba(238, 238, 238, 0.2);
-    color: rgba(238, 238, 238, 0.2);
+.contact_form button:hover {
+    background-color: #333333;
 }
 
-::-moz-selection {
-    background: rgba(238, 238, 238, 0.2);
-    color: rgba(238, 238, 238, 0.2);
-    text-shadow: none;
+
+.contact_thankyou {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    display: none;
 }
 
-::selection {
-    background: rgba(238, 238, 238, 0.4);
-    color: rgba(238, 238, 238, 0.3);
-    text-shadow: none;
+.contact_thankyou h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.contact_thankyou p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+@keyframes close_form {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes open_form {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }

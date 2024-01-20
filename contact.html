@@ -1,109 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="My Personal Portfolio!">
-    <meta name="keywords" content="HTML, CSS, JavaScript, NodeJS, PHP, Python, Java, Minecraft, Minecraft Plugins">
-    <meta name="author" content="Woody Willis">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>
-    // Don't force http when serving the website locally
-    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woody Willis</title>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Woody Willis</h1>
-      <ul class="navigation">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about.html" class="nav-link">About</a></li>
-        <li><a href="/projects.html" class="nav-link">Projects</a></li>
-        <li><a href="/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-        <div class="shade">
-            <div class="blackboard">
-                <form method="post" action="https://formspree.io/f/xvolwwoq" id="contact-form">
-                    <div class="form">
-                        <p>
-                            <label>Name: </label>
-                            <input name="name" type="text" />
-                        </p>
-                        <p>
-                            <label>Email: </label>
-                            <input name="email" type="email" />
-                        </p>
-                        <p>
-                            <label>Phone: </label>
-                            <input name="phone" type="tel" />
-                        </p>
-                        <p>
-                            <label>Subject: </label>
-                            <input name="subject" type="text" />
-                        </p>
-                        <p>
-                            <label>Message: </label>
-                            <textarea name="message" form="contact-form"></textarea>
-                        </p>
-                        <p class="wipeout">
-                            <input type="submit" value="Send" />
-                        </p>
-                    </div>
-                </form>
-            </div>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__name">
+            <a href="/">
+                <h2>Woody Willis</h2>
+            </a>
+        </div>
+        <div class="navbar__links">
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
-    </section>
-    <span id="spacer"></span>
 
-    <!-- Footer section -->
-    <footer>
-      <p class="copy" id="copyright"></p>
-    </footer>
-    <script>
-      document.getElementById('copyright').innerHTML = '&copy; Copyright Woody Willis ' + new Date().getFullYear()
-      let spacer = document.getElementById('spacer');
-      for (var i = 0; i < 44; i++) {
-        spacer.innerHTML += '<br>';
-      }
-    </script>
+    <div class="content">
+        <div class="contact_form" id="form">
+            <h1>Contact Me</h1>
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <textarea placeholder="Message" id="message"></textarea>
+            <button id="submit">Send</button>
+        </div>
+        <div class="contact_thankyou" id="thankyou">
+            <h1>Thank you for your message!</h1>
+            <p>I will get back to you as soon as possible.</p>
+        </div>
+    </div>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+    <div class="footer">
+        <p>&copy; Woody Willis 2024</p>
+    </div>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/contact.js"></script>
+</body>
 
-    <!-- Buy me a coffee! -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woodywillis" data-description="Support me on Buy me a coffee!" data-message="Hello! Thanks for checking out my site!" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-  </body>
 </html>

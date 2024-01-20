@@ -1,224 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="My Personal Portfolio!">
-    <meta name="keywords" content="HTML, CSS, JavaScript, NodeJS, PHP, Python, Java, Minecraft, Minecraft Plugins">
-    <meta name="author" content="Woody Willis">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>
-    // Don't force http when serving the website locally
-    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woody Willis</title>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Woody Willis</h1>
-      <ul class="navigation">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about.html" class="nav-link">About</a></li>
-        <li><a href="/projects.html" class="nav-link">Projects</a></li>
-        <li><a href="/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2 class="projects-title">Projects</h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="assets/images/ndaeasy.png"
-              alt="expense-tracker"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">NDA Easy</h3>
-            <p class="project-details">
-              This project taught me the basis of Blockchain technology. This was about
-              storing Non-Disclosure Agreements on a Blockchain and being able to verify
-              the validity of an NDA.
-            </p>
-            <a href="https://www.ndaeasy.co.uk" style="pointer-events: none;" target="_blank" class="project-link"><del>Check it Out</del></a> <span style="color:rgb(99, 99, 99);">[Taken Down]</span>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="assets/images/bridgePractice.png"
-              alt="netflic-clone"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Bridge Practice</h3>
-            <p class="project-details">
-              This project is a Minecraft server on which I am an admin.
-              I am working with the owner and a fellow developer to build this
-              server. It has over 100 thousand unique players!
-            </p>
-            <a href="https://bridgepractice.net" target="_blank" class="project-link">Check it Out</a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="assets/images/hypixelTools.png"
-              alt="greeny-earth"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Hypixel Tools</h3>
-            <p class="project-details">
-              This project is extending my knowledge of the Hypixel and
-              DiscordJS. Using NodeJS, this Discord bot can denick,
-              find nicks and get stats of any player you choose!
-            </p>
-            <a href="https://github.com/woodywillis/hypixel-tools" target="_blank" class="project-link">Check it Out</a>
-          </div>
-          <br>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__name">
+            <a href="/">
+                <h2>Woody Willis</h2>
+            </a>
         </div>
-        <br>
-        <div class="projects-container">
-            <div class="project-container project-card">
-              <img
-                src="assets/images/packConverter.png"
-                alt="expense-tracker"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Minecraft Pack Converter</h3>
-              <p class="project-details">
-                This project is all about making the transition of
-                resource packs between Minecraft Java versions a
-                piece of cake!
-              </p>
-              <a href="https://github.com/Offensively/mc-pack-converter" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/images/badWords.png"
-                alt="netflic-clone"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Bad Word Checker API</h3>
-              <p class="project-details">
-                This project taught be the basis of intergrating <a href="https://wit.ai">Wit.AI</a> into
-                a NodeJS application. The API checks a string for profanity (bad words) giving a 'badness
-                scale' for you to verify!
-              </p>
-              <a href="https://github.com/Offensively/bad-word-checker-api" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/images/flagifyUkraine.png"
-                alt="greeny-earth"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Ukraine Twitter Bot</h3>
-              <p class="project-details">
-                This project taught me how to intergrate the Twitter API into
-                a NodeJS application. This bot account (which you can find <a href="https://twitter.com/FlagifyUkraine" target="_blank">here</a>)
-                takes random people's avatars and overlays a Ukraine flag on it. This project
-                also taught me image manipulation with JIMP.
-              </p>
-              <a href="https://twitter.com/FlagifyUkraine" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <br>
-          </div>
-          <br>
-        <div class="projects-container">
-            <div class="project-container project-card">
-              <img
-                src="assets/images/trainly.png"
-                alt="trainly"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Trainly</h3>
-              <p class="project-details">
-                This project uses real-time data from National Rail along with
-                some estimating techniques to show the user of the Android
-                app the loction of their train.
-              </p>
-              <a href="https://trainly.co.uk" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/images/fppDiscBot.png"
-                alt="netflic-clone"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Discord Flag Avatar Bot</h3>
-              <p class="project-details">
-                This project is a Discord bot where you can run a command
-                (/flagify) that takes your avatar and overlays a flag
-                of your choice which you can then use!
-              </p>
-              <a href="https://github.com/Offensively/flag-avatar" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card" style="visibility: hidden;">
-              <img
-                src="assets/images/hypixelTools.png"
-                alt="greeny-earth"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Hypixel Tools</h3>
-              <p class="project-details">
-                This project is extending my knowledge of the Hypixel and
-                DiscordJS. Using NodeJS, this Discord bot can denick,
-                find nicks and get stats of any player you choose!
-              </p>
-              <a href="https://github.com/woodywillis/hypixel-tools" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <br>
-          </div>
-      </section>
+        <div class="navbar__links">
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- Footer section -->
-    <footer>
-      <p class="copy" id="copyright"></p>
-    </footer>
-    <script>
-      document.getElementById('copyright').innerHTML = '&copy; Copyright Woody Willis ' + new Date().getFullYear()
-      let spacer = document.getElementById('spacer');
-      for (var i = 0; i < 38; i++) {
-        spacer.innerHTML += '<br>';
-      }
-    </script>
+    <div class="content">
+        <h2>Main Projects</h2>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+        <table class="main">
+            <tr>
+                <td>
+                    <img src="/assets/img/projects/trainly.png" alt="Trainly Thumbnail">
+                    <h4>Trainly</h4>
+                    <p>A lightweight mobile application designed for dynamic and flexible use of GB trains.</p>
+                    <a class="button" href="https://trainly.co.uk" target="_blank">Learn more</a>
+                </td>
+                <td>
+                    <img src="/assets/img/projects/ndaeasy.png" alt="NDA Easy Thumbnail">
+                    <h4>NDA Easy</h4>
+                    <p>A web application utilising Blockchain technology for security and evidence of signed Non-Disclosure Agreements.</p>
+                    <a class="disabled button" target="_blank" disabled>Taken down</a>
+                </td>
+            </tr>
+        </table>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+        <h2 class="side_title">Side Projects</h2>
+        <h3>I am no longer working on projects marked with * </h3>
 
-    <!-- Buy me a coffee! -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woodywillis" data-description="Support me on Buy me a coffee!" data-message="Hello! Thanks for checking out my site!" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-  </body>
+        <table class="side">
+            <tr>
+                <td>
+                    <img src="/assets/img/projects/sparx-answers.png" alt="Sparx Answers Thumbnail">
+                    <h4>Sparx Answers</h4>
+                    <p>An open-source Chrome extension with utilities and answer interception for Sparx Maths.</p>
+                    <a class="button" href="https://github.com/woody-willis/sparx-answers-extension" target="_blank">Learn more</a>
+                </td>
+                <td>
+                    <img src="/assets/img/projects/magic-annotate.png" alt="Magic Annotate & Mark Thumbnail">
+                    <h4>Magic Annotate & Mark</h4>
+                    <p>A Chrome extension allowing free-draw annotation on any Google Doc made for <a href="https://sites.google.com/view/notsomagicapps/home" target="_blank">Not so Magic Apps</a>.</p>
+                    <a class="button" href="https://sites.google.com/view/notsomagicapps/magic-annotate-mark" target="_blank">Learn more</a>
+                </td>
+                <td>
+                    <img src="/assets/img/projects/beatscharity.png" alt="BEATS Charity Thumbnail">
+                    <h4>BEATS Charity Site Redesign *</h4>
+                    <p>Modern redesign of a website that hadn't had it's style updated in a while.</p>
+                    <a class="button" href="https://beatscharity.co.uk" target="_blank">See website</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/assets/img/projects/bridgepractice.png" alt="Bridge Practice Thumbnail">
+                    <h4>Bridge Practice *</h4>
+                    <p>A Minecraft server built for developing your skills in Hypixel's The Bridge gamemode.</p>
+                    <a class="button" href="https://bridgepractice.net" target="_blank">See website</a>
+                </td>
+                <td>
+                    <img src="/assets/img/projects/ukrainetwitter.png" alt="Ukraine Twitter Bot Thumbnail">
+                    <h4>Ukraine Twitter Bot *</h4>
+                    <p>A bot that would simply overlay a Ukrainian flag over your Twitter avatar made shortly after the outbreak of the Ukrainian Russian conflict.</p>
+                    <a class="button disabled" href="https://bridgepractice.net" target="_blank" disabled>Taken down</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Woody Willis 2024</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/common.js"></script>
+</body>
+
 </html>
