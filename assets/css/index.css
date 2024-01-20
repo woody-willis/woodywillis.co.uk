@@ -36,6 +36,13 @@ html, body {
     z-index: 200;
 }
 
+@media screen and (max-width: 768px) {
+    .content__info {
+        flex-direction: column;
+        height: 100dvh;
+    }
+}
+
 .content__info__image {
     height: 50vh;
     width: 25%;
@@ -43,6 +50,12 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .content__info__image {
+        display: none;
+    }
 }
 
 .content__info__image img {
@@ -122,6 +135,12 @@ html, body {
 
 .content__info__socials li a:hover {
     color: var(--color-light-dark);
+}
+
+@media screen and (max-width: 768px) {
+    .content__info__text {
+        width: 80%;
+    }
 }
 
 .content__info__scroll_indicator {
@@ -209,6 +228,20 @@ html, body {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .content__skills {
+        height: auto;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .content__skills ul {
+        justify-content: center;
+        padding: 0;
+    }
+}
+
 .train {
     width: 60%;
     height: auto;
@@ -217,6 +250,12 @@ html, body {
     z-index: 100;
     overflow: hidden;
     filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .train {
+        display: none;
+    }
 }
 
 @keyframes train_normal {
@@ -305,4 +344,29 @@ html, body {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .content__current_project {
+        flex-direction: column;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .content__current_project__text {
+        width: 80%;
+        height: auto;
+        padding: 0;
+    }
+
+    .content__current_project__text p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .content__current_project__image {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
 }

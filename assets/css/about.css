@@ -5,3 +5,14 @@
 .content__info__text h1 {
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .content__info {
+        height: auto;
+        padding-top: 12dvh;
+    }
+
+    .content__info__text {
+        width: 90%;
+    }
+}

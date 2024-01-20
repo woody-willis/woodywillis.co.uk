@@ -116,3 +116,14 @@ html, body {
         transform: scaleY(1);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact_form {
+        width: 80%;
+        height: 50%;
+    }
+
+    .contact_thankyou {
+        width: 80%;
+    }
+}

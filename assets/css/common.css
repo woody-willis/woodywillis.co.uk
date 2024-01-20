@@ -88,6 +88,52 @@ html, body {
     color: var(--color-light-dark);
 }
 
+.navbar__hamburger {
+    display: none;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__links.show {
+        display: block !important;
+        position: absolute;
+        top: 12dvh;
+        right: 0;
+        margin-right: 0;
+        width: 50dvw;
+        background-color: var(--color-dark);
+        padding: 20px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .navbar__links.show ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar__links.show li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        display: list-item;
+        width: 100%;
+    }
+
+    .navbar__links.show a {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+}
+
 /* FOOTER */
 
 .footer {
