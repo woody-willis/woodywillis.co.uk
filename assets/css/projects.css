@@ -22,7 +22,7 @@
 }
 
 .content .main {
-    width: 60%;
+    width: 95%;
     height: auto;
     margin: 0 auto;
 }
@@ -33,7 +33,7 @@
 }
 
 .content .main tr td {
-    width: 50%;
+    width: calc(100% / 3);
     height: auto;
     padding: 10px;
     text-align: center;
