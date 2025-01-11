@@ -32,6 +32,16 @@ body {
     color: #fddbb0;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar a {
+        margin: 0 1rem;
+    }
+}
+
 .socials {
     position: fixed;
     right: 1rem;
@@ -51,6 +61,13 @@ body {
 }
 .socials a:hover {
     color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .socials {
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
 }
 
 footer {
