@@ -1,52 +1,18 @@
-// function createTrain() {
-//     let train = document.createElement('img');
-//     train.src = '/assets/img/train.png';
-//     train.classList.add('train');
+document.ondragstart = function() { return false; }
 
-//     const direction = Math.random() > 0.5 ? 'normal' : 'reverse';
+const nameText = 'Hello, I\'m Woody';
+const nameElement = document.getElementById('anim-typewriter-name');
+const bioElement = document.getElementById('bio');
 
-//     let top = Math.floor(Math.random() * 60)-10 + '%';
-//     let newTop = trainsTop.length !== 0;
-//     while (newTop) {
-//         if (trainsTop.includes(top)) {
-//             top = Math.floor(Math.random() * 60)-10 + '%';
-//             continue;
-//         }
+(async () => {
+    for (let i = 0; i < nameText.length; i++) {
+        await new Promise((resolve) => {
+            setTimeout(() => {
+                nameElement.innerHTML += nameText[i];
+                resolve();
+            }, Math.random() * 50 + 50);
+        });
+    }
 
-//         for (const trainTop of trainsTop) {
-//             if (top < trainTop + 15 && top > trainTop - 15) {
-//                 top = Math.floor(Math.random() * 60)-10 + '%';
-//                 newTop = true;
-//                 break;
-//             } else {
-//                 newTop = false;
-//             }
-//         }
-//     }
-
-//     train.style.top = top;
-
-//     const time = Math.round(Math.random() * 15) + 5;
-//     train.style.animation = "train_" + direction + " " + time + "s linear infinite";
-
-//     setTimeout(() => {
-//         document.querySelector('.content').appendChild(train);
-//         trainsTop.push(top);
-//     }, Math.random() * 1000);
-
-//     setTimeout(() => {
-//         train.remove();
-//         trainsTop.splice(trainsTop.indexOf(top), 1);
-//         createTrain();
-//     }, time * 2000);
-// }
-
-// const trainsTop = [];
-// const MAX_TRAINS = 4;
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Animate /assets/img/train.png at random Y and randomly left or right and random speeds
-//     for (let i = 0; i < MAX_TRAINS; i++) {
-//         createTrain();
-//     }
-// });
+    bioElement.style.animation = 'fadeIn 1s ease-in-out forwards';
+})();

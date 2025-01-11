@@ -8,26 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Woody Willis</title>
     <meta name="title" content="Woody Willis" />
-    <meta name="description" content="The portfolio of my projects, skills and experience as a young software engineer." />
-    
+    <meta name="description"
+        content="The portfolio of my projects, skills and experience as a young software engineer." />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://woodywillis.co.uk/" />
     <meta property="og:title" content="Woody Willis" />
-    <meta property="og:description" content="The portfolio of my projects, skills and experience as a young software engineer." />
+    <meta property="og:description"
+        content="The portfolio of my projects, skills and experience as a young software engineer." />
     <meta property="og:image" content="https://woodywillis.co.uk/assets/img/meta.png" />
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://woodywillis.co.uk/" />
     <meta property="twitter:title" content="Woody Willis" />
-    <meta property="twitter:description" content="The portfolio of my projects, skills and experience as a young software engineer." />
+    <meta property="twitter:description"
+        content="The portfolio of my projects, skills and experience as a young software engineer." />
     <meta property="twitter:image" content="https://woodywillis.co.uk/assets/img/meta.png" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/assets/css/index.css">
@@ -35,123 +36,108 @@
 
 <body>
     <div class="navbar">
-        <div class="navbar__name">
-            <a href="/">
-                <h2>Woody Willis</h2>
-            </a>
+        <div class="logo">
+            <a href="/">Woody Willis</a>
         </div>
-        <div class="navbar__links">
-            <ul>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="navbar__hamburger">
-            <i class="fas fa-bars fa-3x"></i>
+        <div>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 
-    <div class="content">
-        <div class="content__info">
-            <div class="content__info__image">
-                <img src="/assets/img/woody.jpg"
-                    alt="A photo of me">
-            </div>
-            <div class="content__info__text">
-                <h1>Who am I?</h1>
-                <p>
-                    Hi, I'm Woody, a 16 year old programmer from southern England. I like to look
-                    at problems today and use the skills I have learnt to
-                    build new and creative solutions. Have a look at my skills below!
-                </p>
-                <ul class="content__info__socials">
-                    <li>
-                        <a href="https://www.linkedin.com/in/woody-willis/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/woody-willis" target="_blank"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content__info__scroll_indicator">
-                <a href="#skills">
-                    <i class="fas fa-arrow-down"></i>
-                    <i class="fas fa-arrow-down"></i>
-                    <i class="fas fa-arrow-down"></i>
-                </a>
-            </div>
-        </div>
+    <div class="socials">
+        <a href="https://github.com/woody-willis" target="_blank">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/woody-willis" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+    </div>
 
-        <div class="content__skills" id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>
-                    <img src="/assets/img/skills/android.svg" alt="Android logo">
-                    <p>Android</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/java.svg" alt="Java logo">
-                    <p>Java</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/nodejs.svg" alt="NodeJS logo">
-                    <p>NodeJS</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/html5.svg" alt="HTML 5 logo">
-                    <p>Web</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/php.svg" alt="PHP logo">
-                    <p>PHP</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/mysql.svg" alt="MySQL logo">
-                    <p>MySQL</p>
-                </li>
-                <li>
-                    <img src="/assets/img/skills/flutter.svg" alt="Flutter logo">
-                    <p>Flutter</p>
-                </li>
-            </ul>
-        </div>
-        
+    <div class="hero" id="about">
+        <img src="/assets/img/woody.png" alt="Picture of me">
+        <h1 id="anim-typewriter-name"></h1>
+        <p id="bio">
+            A 16 year old programmer from southern England. I like to look
+            at problems today and use the skills I have learnt to
+            build new and creative solutions.
+        </p>
+        <div class="down-arrow"></div>
+    </div>
 
-        <div class="content__about">
-            <div class="content__about__text">
-                <h2>About me</h2>
-                <p>
-                    Hi, I'm Woody, a 16 year old developer from the south of England. I love creating new software
-                    solve existing problems. Back in 2015, on a flight to London from Berlin, my Dad introduced me to <a
-                        href="https://scratch.mit.edu" target="_blank">Scratch</a>, a simple block coding language, to
-                    keep me
-                    entertained. Little did I know, this would be the start of my path into programming.
-                </p>
-                <p>
-                    I spent a long time watching and helping my father as he experimented with <a
-                        href="https://php.net" target="_blank">PHP</a>, and before long I was writing my own code. I've
-                    taught myself most of what I know since, driven by curiosity and a passion for puzzles.
-                </p>
-                <p>
-                    One of the best opportunities I had was developing for a small but active Minecraft server. The
-                    owner was very kind to give me access to develop for the server and in doing so opened my eyes to
-                    version control with <a href="https://git-scm.com/" target="_blank">git</a> and code reviews. 
-                    This taught me not only technical skills which have helped in
-                    other areas but also instilled good habits for writing readable and efficient code.
-                </p>
-                <p>
-                    In short, I've had a ton of fun coding for various personal projects. From tinkering with Scratch,
-                    to improving my skills on a Minecraft server, to now developing my own train app. I am excited to
-                    see where this journey will take me next.
-                </p>
+    <div class="skills">
+        <h2>My Skills</h2>
+        <div class="logos">
+            <div>
+                <img src="/assets/img/skills/android.svg" alt="Android logo">
+                <p>Android</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/java.svg" alt="Java logo">
+                <p>Java</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/nodejs.svg" alt="NodeJS logo">
+                <p>NodeJS</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/html5.svg" alt="HTML 5 logo">
+                <p>Web</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/php.svg" alt="PHP logo">
+                <p>PHP</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/mysql.svg" alt="MySQL logo">
+                <p>MySQL</p>
+            </div>
+            <div>
+                <img src="/assets/img/skills/flutter.svg" alt="Flutter logo">
+                <p>Flutter</p>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; Woody Willis 2024</p>
+    <div class="about" id="about">
+        <h2>About me</h2>
+        <p>
+            Hi, I'm Woody, a 16 year old developer from the south of England. I love creating new software
+            solve existing problems. Back in 2015, on a flight to London from Berlin, my Dad introduced me to <a
+                href="https://scratch.mit.edu" target="_blank">Scratch</a>, a simple block coding language, to
+            keep me
+            entertained. Little did I know, this would be the start of my path into programming.
+        </p>
+        <p>
+            I spent a long time watching and helping my father as he experimented with <a href="https://php.net"
+                target="_blank">PHP</a>, and before long I was writing my own code. I've
+            taught myself most of what I know since, driven by curiosity and a passion for puzzles.
+        </p>
+        <p>
+            One of the best opportunities I had was developing for a small but active Minecraft server. The
+            owner was very kind to give me access to develop for the server and in doing so opened my eyes to
+            version control with <a href="https://git-scm.com/" target="_blank">git</a> and code reviews.
+            This taught me not only technical skills which have helped in
+            other areas but also instilled good habits for writing readable and efficient code.
+        </p>
+        <p>
+            In short, I've had a ton of fun coding for various personal projects. From tinkering with Scratch,
+            to improving my skills on a Minecraft server, to now developing my own train app. I am excited to
+            see where this journey will take me next.
+        </p>
     </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Whether it's a question or a collaboration opportunity, feel free to reach out.
+        </p>
+        <a href="/contact">Get in Touch</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Woody Willis. All rights reserved.
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
         integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="

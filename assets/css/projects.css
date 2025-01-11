@@ -83,19 +83,19 @@
 }
 
 .content a {
-    color: var(--color-dark);
+    color: #333;
     font-weight: 400;
     transition: color 0.3s ease-in-out;
 }
 
 .content a:hover {
-    color: var(--color-dark);
+    color: #333;
 }
 
 .content .button {
-    color: var(--color-dark);
+    color: #333;
     font-weight: 400;
-    border: 2px solid var(--color-dark);
+    border: 2px solid #333;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -103,13 +103,13 @@
 }
 
 .content .button:hover {
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: #333;
+    color: #fef6eb;
 }
 
 .content .button.disabled {
-    background-color: #333333;
-    border: 2px solid #333333;
+    background-color: #333;
+    border: 2px solid #333;
     color: #6b6b6b;
     cursor: not-allowed;
 }

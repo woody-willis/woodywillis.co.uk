@@ -20,8 +20,8 @@ html, body {
 }
 
 .contact_form {
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    color: #fef6eb;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     width: 50%;
@@ -38,14 +38,16 @@ html, body {
     width: 90%;
     padding: 12px;
     border: none;
-    border-bottom: 3px solid var(--color-light);
+    border-bottom: 3px solid #fef6eb;
     border-radius: 4px;
     resize: vertical;
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: #333;
+    color: #fef6eb;
     margin-bottom: 20px;
     font-family: 'Poppins';
     transition: border-bottom 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .contact_form textarea::placeholder {
@@ -58,23 +60,25 @@ html, body {
 }
 
 .contact_form button {
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: #333;
+    color: #fef6eb;
     padding: 12px 20px;
-    border: 3px solid var(--color-light);
+    border: 3px solid #fef6eb;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     width: 90%;
+    box-sizing: border-box;
 }
 
 .contact_form button:hover {
-    background-color: #333333;
+    background-color: #fef6eb;
+    color: #333;
 }
 
 
 .contact_thankyou {
-    background-color: var(--color-dark);
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     width: 50%;
@@ -92,12 +96,14 @@ html, body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0px;
+    color: #fef6eb;
 }
 
 .contact_thankyou p {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 20px;
+    color: #fef6eb;
 }
 
 @keyframes close_form {
