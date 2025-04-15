@@ -18,7 +18,7 @@ function sendMessage() {
             Accept: "application/json",
         },
         body: JSON.stringify({
-            access_key: "9183a2aa-b726-4a4e-8a0c-ea946cae5bcf",
+            access_key: "d8b0f79d-f295-48ea-bf1e-d372ea765cbf",
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value,
