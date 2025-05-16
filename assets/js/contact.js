@@ -5,7 +5,7 @@ function closeForm() {
     }, 400);
 
     setTimeout(() => {
-        thankyou.style.display = 'flex';
+        thankyou.classList.remove('hidden');
         thankyou.style.animation = 'open_form 0.4s ease-in-out forwards';
     }, 500);
 }
