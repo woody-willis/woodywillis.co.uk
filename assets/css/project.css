@@ -1,0 +1,277 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #171717;
+    color: #ffffff;
+
+    background-image: url(/assets/img/blank.png);
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .nav a {
+        font-size: 22px;
+    }
+}
+
+
+.content {
+    width: 50%;
+    min-height: calc(100vh - 100px);
+    padding: 20px 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 20;
+}
+
+.content .header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content .header .status {
+    font-size: 20px;
+    color: #888888;
+}
+.content .header .status.green {
+    color: #00cc66;
+}
+.content .header .status.orange {
+    color: #ffb732;
+}
+.content .header .status.red {
+    color: #ff4d4d;
+}
+
+.content img.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.content .try-now {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content .try-now h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.content .try-now .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .try-now .buttons a img {
+    height: 70px;
+    width: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.content .try-now .buttons a img:hover {
+    transform: scale(1.1);
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.content .tech-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content .tech-stack h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.content .tech-stack .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .tech-stack .tech-list a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+}
+
+.content .tech-stack .tech-list img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.content .tech-stack .tech-list img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .content .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .header h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .content .header .status {
+        font-size: 18px;
+    }
+
+    .content img.banner {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .content .try-now h3 {
+        font-size: 20px;
+    }
+
+    .content .try-now .buttons a img {
+        height: 3.2rem;
+        margin: 0 5px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .tech-stack h3 {
+        font-size: 20px;
+    }
+
+    .content .tech-stack .tech-list img {
+        height: 40px;
+        margin: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 5px 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 14px;
+    }
+}
