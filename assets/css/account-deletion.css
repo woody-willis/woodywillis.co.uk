@@ -1,0 +1,58 @@
+body {
+    font-family: "Raleway", sans-serif;
+    padding: 2rem;
+    width: 70rem;
+    margin: auto;
+    color: #f9f9f9;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+input,
+button {
+    display: block;
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: "Raleway", sans-serif;
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: "Raleway", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c62828;
+}

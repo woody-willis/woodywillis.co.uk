@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Deletion Request - Ready or Not</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/account-deletion.css" />
+</head>
+
+<body>
+    <h1>Request Account Deletion for <strong>Ready or Not</strong></h1>
+    <p>Please enter your email to confirm you want to delete your account.</p>
+    <div>
+        <input type="hidden" id="service" name="service" value="ready-or-not" />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+
+        <button id="submit">Confirm Deletion</button>
+    </div>
+
+    <script src="/assets/js/account-deletion.js"></script>
+</body>
+
+</html>
