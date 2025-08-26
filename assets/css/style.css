@@ -651,7 +651,16 @@ scrub-video {
     margin: 1rem 0 2rem;
 }
 
-.contact .form {
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+}
+
+.contact .row .form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,8 +671,8 @@ scrub-video {
     border-radius: 10px;
 }
 
-.contact .form input,
-.contact .form textarea {
+.contact .row .form input,
+.contact .row .form textarea {
     width: 100%;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -676,18 +685,18 @@ scrub-video {
     transition: 0.3s ease-in-out;
     box-sizing: border-box;
 }
-.contact .form input:focus,
-.contact .form textarea:focus {
+.contact .row .form input:focus,
+.contact .row .form textarea:focus {
     outline: none;
     box-shadow: 0 0 8px #fff;
 }
-.contact .form input.invalid,
-.contact .form textarea.invalid {
+.contact .row .form input.invalid,
+.contact .row .form textarea.invalid {
     border: 2px solid #ff0000;
     background-color: #222;
 }
 
-.contact .form button {
+.contact .row .form button {
     background-color: #333;
     color: #fff;
     font-size: 1.2rem;
@@ -700,12 +709,12 @@ scrub-video {
     width: 100%;
     margin-top: 1rem;
 }
-.contact .form button:hover {
+.contact .row .form button:hover {
     background-color: #fff;
     color: #333;
 }
 
-.contact .thank_you {
+.contact .row .thank_you {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -716,13 +725,36 @@ scrub-video {
     border-radius: 10px;
     width: 40%;
 }
-.contact .thank_you.hidden {
+.contact .row .thank_you.hidden {
     display: none;
 }
 
-.contact .thank_you p {
+.contact .row .thank_you p {
     font-size: 1.3rem;
     margin: 0;
+}
+
+.contact .row .socials-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 25%;
+}
+
+.contact .row .socials-prompt i {
+    font-size: 2.3rem;
+    color: #fff;
+    transform: rotate(40deg);
+    animation: bounce-forward-40 2s ease-in-out infinite;
+}
+
+.contact .row .socials-prompt h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0.75rem 0;
 }
 
 @media (max-width: 768px) {
@@ -740,13 +772,17 @@ scrub-video {
         width: 90%;
     }
     
-    .contact .form {
+    .contact .row .form {
         width: 90%;
         padding: 1rem;
     }
 
-    .contact .thank_you {
+    .contact .row .thank_you {
         width: 90%;
+    }
+
+    .contact .row .socials-prompt {
+        display: none;
     }
 }
 
@@ -757,6 +793,18 @@ scrub-video {
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes bounce-forward-40 {
+    0% {
+        transform: translate(0, 0) rotate(40deg);
+    }
+    50% {
+        transform: translate(8px, -10px) rotate(40deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(40deg);
     }
 }
 
