@@ -88,10 +88,13 @@ scrub-video {
 
 @media (max-width: 768px) {
     .socials {
+        position: absolute;
         top: 0.5rem;
+        left: 0.5rem;
         right: 0.5rem;
         flex-direction: row;
         gap: 1rem;
+        margin: 0 auto;
     }
 }
 
@@ -190,6 +193,67 @@ scrub-video {
     animation-delay: 1s;
 }
 
+.hero .work {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 2rem;
+    border-radius: 25px;
+    background: #f0c000;
+    color: #171717;
+    text-align: center;
+    transform-origin: top left;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+.hero .work:hover {
+    transform: scale(1.15);
+}
+
+.hero .work h2 {
+    margin: 0;
+}
+
+.hero .work p {
+    margin: 0.5rem 0 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.hero .work a {
+    color: #383838;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+.hero .work a:hover {
+    color: #171717;
+}
+
+.hero .work span {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.hero .work ul {
+    list-style: outside;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.hero .work ul li {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
 .hero .hero-scroll {
     position: absolute;
     bottom: 1rem;
@@ -222,8 +286,14 @@ scrub-video {
 
 @media (max-width: 768px) {
     .hero {
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         width: 100vw;
+        flex-direction: column;
+    }
+
+    .hero .fg {
+        margin-top: 10rem;
     }
     
     .hero .fg h1 {
@@ -231,6 +301,33 @@ scrub-video {
     }
     .hero .fg h2 {
         font-size: 1.5rem;
+    }
+
+    .hero .work {
+        transform: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 2rem;
+        border-radius: 0;
+        top: unset;
+        left: unset;
+    }
+
+    .hero .work h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero .work p {
+        font-size: 0.9rem;
+    }
+
+    .hero .work span {
+        display: none;
+    }
+
+    .hero .hero-scroll {
+        display: none;
     }
 }
 
