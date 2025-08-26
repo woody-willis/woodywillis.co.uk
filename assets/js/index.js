@@ -105,13 +105,15 @@ document.onscroll = function () {
         document.querySelector(".bg-1").style.position = "absolute";
     }
 
-    const singleWindowScrollPercent = Math.min(scrollTop / windowHeight * 100, 100);
-    heroFg.style.transform = `translateX(-${singleWindowScrollPercent}%)`;
-    if (singleWindowScrollPercent > 1) {
-        heroScroll.classList.add("hidden");
-    } else {
-        heroScroll.style.animationDelay = `0`;
-        heroScroll.classList.remove("hidden");
+    if (!isOnMobile) {
+        const singleWindowScrollPercent = Math.min(scrollTop / windowHeight * 100, 100);
+        heroFg.style.transform = `translateX(-${singleWindowScrollPercent}%)`;
+        if (singleWindowScrollPercent > 1) {
+            heroScroll.classList.add("hidden");
+        } else {
+            heroScroll.style.animationDelay = `0`;
+            heroScroll.classList.remove("hidden");
+        }
     }
 };
 

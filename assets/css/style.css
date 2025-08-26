@@ -203,8 +203,9 @@ scrub-video {
     color: #171717;
     text-align: center;
     transform-origin: top left;
-    transform: scale(0.9);
+    transform: scale(0.8);
     transition: transform 0.3s ease-in-out;
+    z-index: 10;
 }
 .hero .work:hover {
     transform: scale(1.15);
@@ -293,7 +294,7 @@ scrub-video {
     }
 
     .hero .fg {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     
     .hero .fg h1 {
@@ -308,10 +309,13 @@ scrub-video {
         width: 100%;
         box-sizing: border-box;
         position: relative;
-        margin-top: 2rem;
+        margin-top: 4rem;
         border-radius: 0;
         top: unset;
         left: unset;
+    }
+    .hero .work:hover {
+        transform: none;
     }
 
     .hero .work h2 {
